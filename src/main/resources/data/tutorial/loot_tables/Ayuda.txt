@@ -1,0 +1,8 @@
+aqui se guardan los archivos que se utilizan para definir las tablas de botin.
+la seccion de gameplay, se refiere a cosas como tradear con entidades, pescar, etc.
+
+esta pagina genera el json, de la loot_table
+https://misode.github.io/loot-table/
+
+Informacion sobre loot_tables
+https://minecraft.gamepedia.com/Loot_table

@@ -17,7 +17,7 @@ public class ModBlocks {
             .of(Material.METAL)
             .breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()
-            .strength(3f, 24f)
+            .strength(3f, 4f)
             .sounds(BlockSoundGroup.METAL)
             .luminance(5));
 
