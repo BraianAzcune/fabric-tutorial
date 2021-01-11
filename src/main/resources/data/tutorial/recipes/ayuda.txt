@@ -1,0 +1,6 @@
+a diferencia del resto de cosa, las recetas se pueden llamar como se quiera
+pero es bueno llamarlas como lo que producen.
+
+esta pagina ayuda a generar el codigo json, para las recetas.
+https://crafting.thedestruc7i0n.ca/
+
