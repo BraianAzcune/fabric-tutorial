@@ -13,12 +13,18 @@ public class ModItems {
     public static final Item RUBY = new Item(new Item.Settings()
             .group(Tutorial.ITEM_GROUP));
 
+
+    public static final Item MI_ESPADA = new Item(new Item.Settings().group(Tutorial.ITEM_GROUP));
+
     //block items
     public static final BlockItem RUBY_BLOCK = new BlockItem(ModBlocks.RUBY_BLOCK, new Item.Settings().group(Tutorial.ITEM_GROUP));
 
-    public static void registerItems(){
+    public static void registerItems() {
         //item
         Registry.register(Registry.ITEM, new Identifier(Tutorial.MOD_ID, "ruby"), RUBY);
+
+        Registry.register(Registry.ITEM, new Identifier(Tutorial.MOD_ID, "mi_espada"), MI_ESPADA);
+
         //block Item
         Registry.register(Registry.ITEM, new Identifier(Tutorial.MOD_ID, "ruby_block"), RUBY_BLOCK);
     }

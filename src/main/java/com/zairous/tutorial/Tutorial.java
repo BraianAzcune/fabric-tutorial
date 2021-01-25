@@ -20,6 +20,10 @@ public class Tutorial implements ModInitializer {
 
     public static final String MOD_ID = "tutorial";
 
+    /**
+     * Decir que tu Item.Settings().group(Tutorial.ITEM_GROUP)
+     * hara que aparezca el item en la seccion del mod
+     */
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
             new Identifier(MOD_ID, "general"),
             () -> new ItemStack(ModItems.RUBY)
