@@ -20,14 +20,21 @@ public class Tutorial implements ModInitializer {
 
     public static final String MOD_ID = "tutorial";
 
+
+
+    //private static java.util.function.Supplier<ItemStack> suplidor = ()-> new ItemStack(ModItems.RUBY);
     /**
      * Decir que tu Item.Settings().group(Tutorial.ITEM_GROUP)
      * hara que aparezca el item en la seccion del mod
+     *
+     * el primer parametro es el identificador del grupo, y el segundo
+     * se utiliza para tomar la imagen y probablemnente otras cosas.
+     * utiliza la interfaz funcional supplier, como se muestra arriba, seria lo mismo
+     * pasarle suplidor, que esa funcion
      */
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
             new Identifier(MOD_ID, "general"),
-            () -> new ItemStack(ModItems.RUBY)
-    );
+            ()-> new ItemStack(ModItems.RUBY));
 
     @Override
     public void onInitialize() {
