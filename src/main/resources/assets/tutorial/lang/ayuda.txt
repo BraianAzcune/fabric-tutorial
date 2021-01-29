@@ -1,0 +1,4 @@
+En esta pagina estan los formatos de colores, que se pueden poner a los mensajes
+o nombres de items y bloques.
+
+https://minecraft.gamepedia.com/Formatting_codes

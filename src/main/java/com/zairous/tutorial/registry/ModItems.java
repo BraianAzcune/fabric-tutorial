@@ -2,9 +2,11 @@ package com.zairous.tutorial.registry;
 
 import com.zairous.tutorial.Tutorial;
 import com.zairous.tutorial.items.Antorcha;
+import com.zairous.tutorial.mixininterface.IItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -35,6 +37,12 @@ public class ModItems {
 
         //block Item
         Registry.register(Registry.ITEM, new Identifier(Tutorial.MOD_ID, "ruby_block"), RUBY_BLOCK);
+
+        changeVanillaItems();
+    }
+
+    private static void changeVanillaItems() {
+        ((IItem)Items.TOTEM_OF_UNDYING).setMaxCount(10);
     }
 
 }

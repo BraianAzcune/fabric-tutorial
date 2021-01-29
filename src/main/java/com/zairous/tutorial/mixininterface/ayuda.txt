@@ -1,0 +1,5 @@
+hasta ahora por lo que entiendo, no podes castear una clase que le haces inyectas codigo, a la que inyecta.
+osea no podes hacer en mi caso
+(MixinItem)Item
+pero podes hacer que MixinItem implemente una interfaz, y luego podes hacer
+(Interfaz)Item

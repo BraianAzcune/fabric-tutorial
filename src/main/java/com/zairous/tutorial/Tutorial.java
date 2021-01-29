@@ -15,10 +15,13 @@ import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootTableEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.util.Identifier;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Tutorial implements ModInitializer {
 
     public static final String MOD_ID = "tutorial";
+    public static final Logger LOG = LogManager.getLogger("Tutorial");
 
 
 
@@ -38,6 +41,7 @@ public class Tutorial implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        LOG.info("iniciamos");
         ModItems.registerItems();
         ModBlocks.registerBlocks();
         modifyLootTables();
