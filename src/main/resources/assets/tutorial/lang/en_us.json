@@ -4,5 +4,7 @@
   "itemGroup.tutorial.general": "my mod group",
   "item.tutorial.mi_espada": "pico espada",
   "item.tutorial.antorcha": "antorcha",
-  "tutorial.toolTip.antorcha": "antorcha gastada, completamente §4inutil"
+  "tutorial.toolTip.antorcha": "antorcha gastada, completamente §4inutil",
+  "enchantment.tutorial.boom_enchantment": "Boom Boom",
+  "enchantment.tutorial.boom_enchantment.desc": "when you attack a mob, it will explode!"
 }

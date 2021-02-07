@@ -21,7 +21,7 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.METAL)
             .luminance(5));
 
-    public static void registerBlocks(){
+    public static void register(){
         Registry.register(Registry.BLOCK, new Identifier(Tutorial.MOD_ID, "ruby_block"), RUBY_BLOCK);
     }
 }

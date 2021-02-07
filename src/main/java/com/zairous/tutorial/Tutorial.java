@@ -1,6 +1,7 @@
 package com.zairous.tutorial;
 
 import com.zairous.tutorial.registry.ModBlocks;
+import com.zairous.tutorial.registry.ModEnchantment;
 import com.zairous.tutorial.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -42,8 +43,9 @@ public class Tutorial implements ModInitializer {
     @Override
     public void onInitialize() {
         LOG.info("iniciamos");
-        ModItems.registerItems();
-        ModBlocks.registerBlocks();
+        ModItems.register();
+        ModBlocks.register();
+        ModEnchantment.register();
         modifyLootTables();
     }
 

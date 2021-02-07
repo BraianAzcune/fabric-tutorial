@@ -27,7 +27,7 @@ public class ModItems {
     public static final BlockItem RUBY_BLOCK = new BlockItem(ModBlocks.RUBY_BLOCK, new Item.Settings().group(Tutorial.ITEM_GROUP));
 
 
-    public static void registerItems() {
+    public static void register() {
         //item
         Registry.register(Registry.ITEM, new Identifier(Tutorial.MOD_ID, "ruby"), RUBY);
 
