@@ -9,7 +9,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 
-public class ModEnchantment {
+public class ModEnchantment{
     private static final BoomEnchantment BOOM_ENCHANTMENT = new BoomEnchantment(
             Enchantment.Rarity.RARE,
             EnchantmentTarget.WEAPON,

@@ -11,7 +11,8 @@ import net.minecraft.util.registry.Registry;
 
 import java.util.List;
 
-public class ModBlocks {
+public class ModBlocks{
+
 
     public static final Block RUBY_BLOCK = new Block(FabricBlockSettings
             .of(Material.METAL)

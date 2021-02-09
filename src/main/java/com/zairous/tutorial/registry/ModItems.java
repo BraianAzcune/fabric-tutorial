@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 
-public class ModItems {
+public class ModItems{
     //items
     public static final Item RUBY = new Item(new Item.Settings()
             .group(Tutorial.ITEM_GROUP));

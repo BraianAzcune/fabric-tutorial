@@ -4,6 +4,8 @@
   "itemGroup.tutorial.general": "my mod group",
   "item.tutorial.mi_espada": "pico espada",
   "item.tutorial.antorcha": "antorcha",
+  "item.tutorial.gunpowder_helmet": "creeper helmet",
+  "item.tutorial.gunpowder_boots": "creeper boots",
   "tutorial.toolTip.antorcha": "antorcha gastada, completamente §4inutil",
   "enchantment.tutorial.boom_enchantment": "Boom Boom",
   "enchantment.tutorial.boom_enchantment.desc": "when you attack a mob, it will explode!"

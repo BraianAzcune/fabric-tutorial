@@ -1,8 +1,6 @@
 package com.zairous.tutorial;
 
-import com.zairous.tutorial.registry.ModBlocks;
-import com.zairous.tutorial.registry.ModEnchantment;
-import com.zairous.tutorial.registry.ModItems;
+import com.zairous.tutorial.registry.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
@@ -19,12 +17,20 @@ import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.nio.file.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Objects;
+import java.util.stream.Stream;
+
 public class Tutorial implements ModInitializer {
 
     public static final String MOD_ID = "tutorial";
     public static final Logger LOG = LogManager.getLogger("Tutorial");
-
-
 
     //private static java.util.function.Supplier<ItemStack> suplidor = ()-> new ItemStack(ModItems.RUBY);
     /**
@@ -42,12 +48,14 @@ public class Tutorial implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        LOG.info("iniciamos");
+        LOG.info("Iniciamos carga de registradores");
         ModItems.register();
         ModBlocks.register();
         ModEnchantment.register();
-        modifyLootTables();
+        ModArmor.register();
     }
+
+
 
     private static final Identifier EMERALD_ORE_LOOT_TABLE_ID = new Identifier(
             "minecraft",
