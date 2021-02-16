@@ -4,7 +4,8 @@
   "package": "com.zairous.tutorial.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MixinItem"
+    "MixinItem",
+    "MixinLivingEntity"
   ],
   "client": [
   ],

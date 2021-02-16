@@ -53,6 +53,8 @@ public class Tutorial implements ModInitializer {
         ModBlocks.register();
         ModEnchantment.register();
         ModArmor.register();
+
+        //Reflection.showMethods(new String[]{"net.minecraft.entity.LivingEntity"});
     }
 
 

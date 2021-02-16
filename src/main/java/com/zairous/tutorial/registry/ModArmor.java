@@ -10,10 +10,10 @@ import net.minecraft.util.registry.Registry;
 
 public class ModArmor{
 
-    private static final Item GUNPOWDER_HELMET = new ArmorItem(ModArmorMaterial.GUNPOWDER,
+    public static final Item GUNPOWDER_HELMET = new ArmorItem(ModArmorMaterial.GUNPOWDER,
             EquipmentSlot.HEAD, new Item.Settings().group(Tutorial.ITEM_GROUP));
 
-    private static final Item GUNPOWDER_BOOTS = new ArmorItem(ModArmorMaterial.GUNPOWDER,
+    public static final Item GUNPOWDER_BOOTS = new ArmorItem(ModArmorMaterial.GUNPOWDER,
             EquipmentSlot.FEET, new Item.Settings().group(Tutorial.ITEM_GROUP));
 
     public static void register(){
